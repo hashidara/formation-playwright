@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Mini Site</title>
+</head>
+<body>
+  <h1>Bienvenue sur mon mini site</h1>
+  <button id="counter" data-test="counter-btn">Cliques : 0</button>
+  <script>
+    let count = 0;
+    document.getElementById('counter').addEventListener('click', () => {
+      count++;
+      document.getElementById('counter').textContent = `Cliques : ${count}`;
+    });
+  </script>
+</body>
+</html>
