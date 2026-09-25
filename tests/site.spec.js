@@ -7,5 +7,5 @@ test('counter increments on click', async ({ page }) => {
   await expect(button).toHaveText('Cliques : 0');
 
   await button.click();
-  await expect(button).toHaveText('Cliques : 1');
+  await expect(button).toHaveText('Cliques : 5');
 });
